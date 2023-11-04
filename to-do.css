@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(rgb(191, 236, 236) 20%, rgb(7, 60, 235));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.to-do {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(58, 96, 179);
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.task-div {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 211, 185);
+    height: 30px;
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+
+}
+
+button {
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    height: 30px;
+    border-radius: 20px;
+    width: 70px;
+    background-color: orange;
+    color: rgb(15, 1, 1);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 8px 25px 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    background-image: url("https://www.svgrepo.com/show/174809/empty-circle.svg");
+    background-size: contain;
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+
+}
+
+ul li.checked {
+    color: brown;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("https: //pngimg.com/d/circle_PNG65.png");
+}
+
+span {
+    position: absolute;
+    right: 0px;
+    font-size: 10px;
+    top: 10px;
+}
